@@ -630,13 +630,6 @@ a {
   font-size: 0.7rem;
 }
 
-.product-card__price {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--color-gray-900);
-  margin-bottom: 16px;
-}
-
 /* ========================================
    BENEFITS
    ======================================== */
