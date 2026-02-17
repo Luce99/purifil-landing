@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Purifil Internacional – Purificadores de agua, aire y utensilios de cocina de alta calidad. Bienestar para ti y tu familia.">
+  <meta name="keywords" content="purificadores de agua, purificadores de aire, utensilios de cocina, Purifil, salud, bienestar">
+  <meta name="author" content="Purifil Internacional">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Purifil Internacional – Bienestar para ti y tu familia">
+  <meta property="og:description" content="Descubre nuestra línea de purificadores de agua, aire y utensilios de cocina premium.">
+  <meta property="og:type" content="website">
+
+  <title>Purifil Internacional – Bienestar para ti y tu familia</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <span class="logo-icon"><i class="fas fa-droplet"></i></span>
+        <span class="logo-text">Purifil</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <a href="#inicio" class="nav__link active">Inicio</a>
+        <a href="#productos" class="nav__link">Productos</a>
+        <a href="#nosotros" class="nav__link">Nosotros</a>
+        <a href="#testimonios" class="nav__link">Testimonios</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+      </nav>
+      <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20productos%20Purifil" class="btn btn--primary header__cta" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Escríbenos
+      </a>
+      <button class="header__toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__badge">Calidad Premium desde Colombia</span>
+        <h1 class="hero__title">Bienestar para ti y <span class="text-gradient">tu familia</span></h1>
+        <p class="hero__subtitle">Descubre nuestra línea de purificadores de agua, aire y utensilios de cocina de la más alta calidad. Protege la salud de quienes más amas.</p>
+        <div class="hero__actions">
+          <a href="https://wa.me/573153855543?text=Hola%2C%20quiero%20conocer%20los%20productos%20Purifil" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> Compra por WhatsApp
+          </a>
+          <a href="#productos" class="btn btn--outline btn--lg">
+            Ver Productos <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__number">25+</span>
+            <span class="stat__label">Años de experiencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">50K+</span>
+            <span class="stat__label">Familias protegidas</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">100%</span>
+            <span class="stat__label">Garantía de calidad</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__image-wrapper">
+          <img src="https://images.unsplash.com/photo-1564419320461-6262af105419?w=600&q=80" alt="Agua pura y cristalina" class="hero__image" loading="eager">
+          <div class="hero__float-card">
+            <i class="fas fa-shield-halved"></i>
+            <span>Certificación de calidad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,64C960,75,1056,85,1152,80C1248,75,1344,53,1392,42.7L1440,32L1440,120L0,120Z" fill="currentColor"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories" id="categorias">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestras categorías</span>
+        <h2 class="section-title">Todo lo que necesitas en un solo lugar</h2>
+      </div>
+      <div class="categories__grid">
+        <a href="#agua" class="category-card" data-category="agua">
+          <div class="category-card__icon">
+            <i class="fas fa-droplet"></i>
+          </div>
+          <h3 class="category-card__title">Purificadores de Agua</h3>
+          <p class="category-card__desc">Sistemas de ultrafiltración, dispensadores, duchas y más para agua pura y saludable.</p>
+          <span class="category-card__link">Ver productos <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="#aire" class="category-card" data-category="aire">
+          <div class="category-card__icon">
+            <i class="fas fa-wind"></i>
+          </div>
+          <h3 class="category-card__title">Purificadores de Aire</h3>
+          <p class="category-card__desc">Soluciones para hogares y negocios. Elimina virus, bacterias y contaminantes.</p>
+          <span class="category-card__link">Ver productos <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="#cocina" class="category-card" data-category="cocina">
+          <div class="category-card__icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3 class="category-card__title">Utensilios de Cocina</h3>
+          <p class="category-card__desc">Baterías de cocina, planchas, sartenes y más en acero quirúrgico y triple capa.</p>
+          <span class="category-card__link">Ver productos <i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="productos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Catálogo</span>
+        <h2 class="section-title">Nuestros Productos</h2>
+        <p class="section-desc">Productos destacados por su calidad, garantía y satisfacción para cada necesidad.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="products__filters">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="agua">Purificadores de Agua</button>
+        <button class="filter-btn" data-filter="aire">Purificadores de Aire</button>
+        <button class="filter-btn" data-filter="cocina">Utensilios de Cocina</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products__grid" id="productsGrid">
+
+        <!-- Water Purifiers -->
+        <div class="product-card" data-category="agua" id="agua">
+          <div class="product-card__badge">Nuevo</div>
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1563351672-62b74891a28a?w=400&q=80" alt="Sistema UF con UV de 6 Etapas" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Purificador de Agua</span>
+            <h3 class="product-card__title">Sistema UF con UV de 6 Etapas</h3>
+            <p class="product-card__desc">Sistema de ultrafiltración de última tecnología con luz ultravioleta. 6 etapas de filtración para el agua más pura y segura.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> Ultrafiltración</span>
+              <span><i class="fas fa-check-circle"></i> Luz UV</span>
+              <span><i class="fas fa-check-circle"></i> 6 etapas</span>
+            </div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20el%20Sistema%20UF%20con%20UV%20de%206%20Etapas" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Consultar precio
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="agua">
+          <div class="product-card__badge">Popular</div>
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&q=80" alt="Purificador de Agua Táctil Vitro" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Purificador de Agua</span>
+            <h3 class="product-card__title">Purificador Táctil Vitro</h3>
+            <p class="product-card__desc">Diseño elegante con panel táctil. Purificación avanzada de agua con tecnología de punta y acabados premium.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> Panel táctil</span>
+              <span><i class="fas fa-check-circle"></i> Diseño premium</span>
+            </div>
+            <div class="product-card__price">$ 673.717 COP</div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20el%20Purificador%20T%C3%A1ctil%20Vitro" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="agua">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1585687433824-8dce5eecca59?w=400&q=80" alt="Purificador en Acero Quirúrgico Mini" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Purificador de Agua</span>
+            <h3 class="product-card__title">Acero Quirúrgico Mini</h3>
+            <p class="product-card__desc">Compacto y poderoso. Purificador de agua en acero quirúrgico, ideal para espacios reducidos sin sacrificar calidad.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> Acero quirúrgico</span>
+              <span><i class="fas fa-check-circle"></i> Compacto</span>
+            </div>
+            <div class="product-card__price">$ 673.717 COP</div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20el%20Purificador%20Acero%20Quir%C3%BArgico%20Mini" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="agua">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&q=80" alt="Purificador en Acero Quirúrgico Grande" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Purificador de Agua</span>
+            <h3 class="product-card__title">Acero Quirúrgico Grande</h3>
+            <p class="product-card__desc">Máxima capacidad en acero quirúrgico. Ideal para familias grandes y oficinas que buscan agua pura todo el día.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> Acero quirúrgico</span>
+              <span><i class="fas fa-check-circle"></i> Gran capacidad</span>
+            </div>
+            <div class="product-card__price">$ 724.559 COP</div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20el%20Purificador%20Acero%20Quir%C3%BArgico%20Grande" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="agua">
+          <div class="product-card__badge">Nuevo</div>
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=400&q=80" alt="Sistema de Ultrafiltración en PVDF" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Purificador de Agua</span>
+            <h3 class="product-card__title">Ultrafiltración en PVDF</h3>
+            <p class="product-card__desc">Membrana PVDF de última generación. Elimina el 99.99% de bacterias y partículas manteniendo minerales esenciales.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> Membrana PVDF</span>
+              <span><i class="fas fa-check-circle"></i> 99.99% bacterias</span>
+            </div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20el%20Sistema%20Ultrafiltraci%C3%B3n%20PVDF" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Consultar precio
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="agua">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80" alt="Filtro Carbón en Bloque 7" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Repuesto</span>
+            <h3 class="product-card__title">Filtro Carbón en Bloque 7</h3>
+            <p class="product-card__desc">Filtro de repuesto de carbón activado en bloque. Mantén tu purificador funcionando al 100% de su capacidad.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> Carbón activado</span>
+              <span><i class="fas fa-check-circle"></i> Alto rendimiento</span>
+            </div>
+            <div class="product-card__price">$ 57.120 COP</div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20el%20Filtro%20Carb%C3%B3n%20en%20Bloque%207" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Air Purifiers -->
+        <div class="product-card" data-category="aire" id="aire">
+          <div class="product-card__badge">Destacado</div>
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=80" alt="Purificador de Aire para Hogar" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Purificador de Aire</span>
+            <h3 class="product-card__title">Purificador de Aire Hogar</h3>
+            <p class="product-card__desc">Elimina virus, bacterias y alérgenos del aire. Ideal para hogares, protege a tu familia de contaminantes ambientales.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> Antiviral</span>
+              <span><i class="fas fa-check-circle"></i> Antibacterial</span>
+              <span><i class="fas fa-check-circle"></i> Silencioso</span>
+            </div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20el%20Purificador%20de%20Aire%20para%20Hogar" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Consultar precio
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="aire">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=400&q=80" alt="Purificador de Aire Industrial" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Purificador de Aire</span>
+            <h3 class="product-card__title">Purificador de Aire Empresarial</h3>
+            <p class="product-card__desc">Solución profesional para oficinas, clínicas, restaurantes y espacios comerciales. Alta capacidad de purificación.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> Alta capacidad</span>
+              <span><i class="fas fa-check-circle"></i> Empresarial</span>
+            </div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20el%20Purificador%20de%20Aire%20Empresarial" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Consultar precio
+            </a>
+          </div>
+        </div>
+
+        <!-- Kitchen Utensils -->
+        <div class="product-card" data-category="cocina" id="cocina">
+          <div class="product-card__badge">Popular</div>
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80" alt="Batería de Cocina 12 Piezas" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Utensilios de Cocina</span>
+            <h3 class="product-card__title">Batería de Cocina 12 Piezas</h3>
+            <p class="product-card__desc">Set completo de 12 piezas en acero quirúrgico. Cocina saludable sin aceite, conservando nutrientes y sabor natural.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> 12 piezas</span>
+              <span><i class="fas fa-check-circle"></i> Acero quirúrgico</span>
+              <span><i class="fas fa-check-circle"></i> Cocina sin aceite</span>
+            </div>
+            <div class="product-card__price">$ 3.023.050 COP</div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20la%20Bater%C3%ADa%20de%20Cocina%2012%20Piezas" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="cocina">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1593618998160-e34014e67546?w=400&q=80" alt="Batería de Cocina 10 Piezas Triple Capa" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Utensilios de Cocina</span>
+            <h3 class="product-card__title">Batería 10 Piezas – Triple Capa (3 PLY)</h3>
+            <p class="product-card__desc">Tecnología triple capa (3 PLY) para distribución uniforme del calor. Calidad profesional para tu hogar.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> 10 piezas</span>
+              <span><i class="fas fa-check-circle"></i> Triple capa</span>
+            </div>
+            <div class="product-card__price">$ 3.339.930 COP</div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20la%20Bater%C3%ADa%2010%20Piezas%20Triple%20Capa" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="cocina">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=400&q=80" alt="Plancha Lisa Purinox" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Utensilios de Cocina</span>
+            <h3 class="product-card__title">Plancha Lisa Purinox</h3>
+            <p class="product-card__desc">Plancha de cocina en material Purinox exclusivo. Superficie antiadherente natural para una cocción saludable.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> Purinox</span>
+              <span><i class="fas fa-check-circle"></i> Antiadherente natural</span>
+            </div>
+            <div class="product-card__price">$ 497.420 COP</div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20la%20Plancha%20Lisa%20Purinox" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="cocina">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1617692855027-33b14f061079?w=400&q=80" alt="Sartén Wok DOMO" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Utensilios de Cocina</span>
+            <h3 class="product-card__title">Sartén Wok DOMO</h3>
+            <p class="product-card__desc">Wok profesional de alta capacidad. Perfecto para salteados, frituras saludables y cocina asiática en casa.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> Alta capacidad</span>
+              <span><i class="fas fa-check-circle"></i> Profesional</span>
+            </div>
+            <div class="product-card__price">$ 1.079.210 COP</div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20el%20Sart%C3%A9n%20Wok%20DOMO" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="cocina">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&q=80" alt="Set de Cocción Rápida" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Utensilios de Cocina</span>
+            <h3 class="product-card__title">Set de Cocción Rápida</h3>
+            <p class="product-card__desc">Cocina en la mitad del tiempo conservando sabor y nutrientes. Set diseñado para la cocina moderna y saludable.</p>
+            <div class="product-card__features">
+              <span><i class="fas fa-check-circle"></i> Cocción rápida</span>
+              <span><i class="fas fa-check-circle"></i> Ahorra tiempo</span>
+            </div>
+            <div class="product-card__price">$ 1.881.000 COP</div>
+            <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesa%20el%20Set%20de%20Cocci%C3%B3n%20R%C3%A1pida" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="benefits">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Por qué elegirnos</span>
+        <h2 class="section-title">La diferencia Purifil</h2>
+      </div>
+      <div class="benefits__grid">
+        <div class="benefit-card">
+          <div class="benefit-card__icon"><i class="fas fa-award"></i></div>
+          <h3>Calidad Certificada</h3>
+          <p>Todos nuestros productos cuentan con certificaciones de calidad que garantizan su rendimiento y seguridad.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon"><i class="fas fa-handshake"></i></div>
+          <h3>Asesoría Personalizada</h3>
+          <p>Nuestro equipo de expertos te guía para encontrar el producto perfecto para tus necesidades.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon"><i class="fas fa-tools"></i></div>
+          <h3>Servicio Técnico</h3>
+          <p>Instalación profesional y soporte técnico continuo para todos nuestros productos.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon"><i class="fas fa-truck-fast"></i></div>
+          <h3>Envío a Todo Colombia</h3>
+          <p>Llegamos a cada rincón del país con envíos seguros y en tiempos óptimos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="nosotros">
+    <div class="container about__inner">
+      <div class="about__image">
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80" alt="Equipo Purifil Internacional" loading="lazy">
+        <div class="about__experience">
+          <span class="about__experience-number">25+</span>
+          <span class="about__experience-text">años cuidando familias colombianas</span>
+        </div>
+      </div>
+      <div class="about__content">
+        <span class="section-tag">Sobre nosotros</span>
+        <h2 class="section-title">Purifil Internacional</h2>
+        <p>Diariamente trabajamos en la calidad, el diseño y la exclusividad de todos nuestros productos. Para ello contamos con un gran equipo de personas, las cuales reciben capacitaciones constantes que les permiten estar altamente calificadas.</p>
+        <p>Nuestro compromiso es desarrollar funciones operativas, administrativas y comerciales de manera adecuada, oportuna y eficiente, siempre pensando en el bienestar de tu familia.</p>
+        <div class="about__highlights">
+          <div class="highlight">
+            <i class="fas fa-check-circle"></i>
+            <span>Equipo altamente capacitado</span>
+          </div>
+          <div class="highlight">
+            <i class="fas fa-check-circle"></i>
+            <span>Productos de diseño exclusivo</span>
+          </div>
+          <div class="highlight">
+            <i class="fas fa-check-circle"></i>
+            <span>Garantía en todos los productos</span>
+          </div>
+          <div class="highlight">
+            <i class="fas fa-check-circle"></i>
+            <span>Atención personalizada</span>
+          </div>
+        </div>
+        <a href="https://wa.me/573153855543?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20Purifil" class="btn btn--whatsapp" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> Conoce más por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonios</span>
+        <h2 class="section-title">Lo que opinan de nosotros</h2>
+        <p class="section-desc">Empresas e instituciones de prestigio confían en nuestros productos.</p>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-card__text">"En la corporación Minuto de Dios en Bogotá, estuvimos instalando purificadores de aire, con el fin de minimizar cualquier riesgo de infección por virus en el ambiente."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><i class="fas fa-building"></i></div>
+            <div>
+              <strong>Corporación UNIMINUTO</strong>
+              <span>Bogotá D.C.</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-card__text">"Nuestra prioridad es la seguridad del personal universitario: Instalamos filtros y purificadores en espacios propensos a microbios como la cafetería y bibliotecas."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <strong>Corporación Universitaria IBEROAMERICANA</strong>
+              <span>Bogotá D.C.</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-card__text">"Esta prestigiosa compañía de exhibición cinematográfica, de origen mexicano, confió en nosotros para proteger sus instalaciones contra virus y bacterias."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><i class="fas fa-film"></i></div>
+            <div>
+              <strong>Cinepolis</strong>
+              <span>Bogotá D.C.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2 class="cta__title">Protege la salud de tu familia hoy</h2>
+      <p class="cta__desc">Escríbenos por WhatsApp y recibe asesoría personalizada sin compromiso. Nuestros expertos te ayudarán a elegir el producto ideal.</p>
+      <a href="https://wa.me/573153855543?text=Hola%2C%20quiero%20recibir%20asesor%C3%ADa%20sobre%20productos%20Purifil" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Hablar con un asesor
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contacto">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">Estamos para ti</h2>
+        <p>Comunícate con nosotros por cualquiera de nuestros canales. Estamos listos para asesorarte.</p>
+        <div class="contact__details">
+          <div class="contact__item">
+            <i class="fas fa-location-dot"></i>
+            <div>
+              <strong>Oficina Principal</strong>
+              <span>Cra. 28 # 83-31, Barrio Polo Club – Bogotá, Colombia</span>
+            </div>
+          </div>
+          <div class="contact__item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <strong>Teléfonos</strong>
+              <span>601 616 4645 – 601 256 1275</span>
+            </div>
+          </div>
+          <div class="contact__item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>315 385 5543</span>
+            </div>
+          </div>
+          <div class="contact__item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <span>telemercadeo@purifilinternacional.com</span>
+            </div>
+          </div>
+          <div class="contact__item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Horarios</strong>
+              <span>Lunes a Viernes: 7:00 am - 5:00 pm<br>Sábados: 8:00 am - 12:00 pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6!2d-74.065!3d4.665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMzknNTQuMCJOIDc0wrAwMycxOC4wIlc!5e0!3m2!1ses!2sco!4v1" width="100%" height="100%" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación Purifil Internacional"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="header__logo">
+            <span class="logo-icon"><i class="fas fa-droplet"></i></span>
+            <span class="logo-text">Purifil</span>
+          </a>
+          <p>Bienestar para ti y tu familia. Más de 25 años cuidando la salud de los colombianos con productos de la más alta calidad.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Productos</h4>
+          <a href="#agua">Purificadores de Agua</a>
+          <a href="#aire">Purificadores de Aire</a>
+          <a href="#cocina">Utensilios de Cocina</a>
+        </div>
+        <div class="footer__links">
+          <h4>Empresa</h4>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#contacto">Contacto</a>
+          <a href="https://purifil.net" target="_blank" rel="noopener">Sitio Oficial</a>
+        </div>
+        <div class="footer__links">
+          <h4>Contacto Rápido</h4>
+          <a href="https://wa.me/573153855543" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="tel:+576016164645"><i class="fas fa-phone"></i> Llamar</a>
+          <a href="mailto:telemercadeo@purifilinternacional.com"><i class="fas fa-envelope"></i> Email</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Purifil Internacional. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/573153855543?text=Hola%2C%20me%20interesan%20los%20productos%20Purifil" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-float__tooltip">Chatea con nosotros</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
