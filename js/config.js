@@ -7,20 +7,21 @@
  * Para cambiar el número de WhatsApp o los mensajes, modifica SOLO este archivo.
  */
 
-/** Datos de contacto de la empresa */
+/** Datos de contacto de la asesora */
 export const CONTACT = Object.freeze({
   WHATSAPP_NUMBER: '573153855543',
   PHONE_MAIN: '+576016164645',
   EMAIL: 'telemercadeo@purifilinternacional.com',
+  ADVISOR_NAME: 'Diana Grisales',
 });
 
 /** Configuración de mensajes predefinidos para WhatsApp */
 export const WHATSAPP_MESSAGES = Object.freeze({
-  DEFAULT: 'Hola, me interesan los productos Purifil',
-  PRODUCT_INQUIRY: 'Hola, me interesa el producto: ',
-  ADVISOR: 'Hola, quiero recibir asesoría sobre productos Purifil',
-  ABOUT: 'Hola, quiero saber más sobre Purifil',
-  GENERAL: 'Hola, me interesa conocer más sobre los productos Purifil',
+  DEFAULT: 'Hola Diana, me interesan los productos Purifil',
+  PRODUCT_INQUIRY: 'Hola Diana, me interesa el producto: ',
+  ADVISOR: 'Hola Diana, quiero recibir asesoría sobre productos Purifil',
+  ABOUT: 'Hola Diana, quiero saber más sobre los productos Purifil',
+  GENERAL: 'Hola Diana, me interesa conocer más sobre los productos Purifil',
 });
 
 /** Selectores del DOM usados en toda la aplicación */

@@ -1,6 +1,8 @@
-# Purifil Internacional – Landing Page
+# Diana Grisales – Asesora Autorizada Purifil
 
-Landing page para **Purifil Internacional**, empresa colombiana especializada en purificadores de agua, aire y utensilios de cocina premium. El objetivo principal es mostrar el catálogo de productos y dirigir a los usuarios a contactar por **WhatsApp**.
+Landing page de **Diana Grisales**, asesora autorizada de productos **Purifil Internacional**. Muestra el catálogo de purificadores de agua, aire y utensilios de cocina premium, dirigiendo a los usuarios a contactar por **WhatsApp** para asesoría personalizada.
+
+> **Nota:** Este sitio no es la página oficial de Purifil Internacional. Es operado por una asesora comercial autorizada. La web oficial es [purifil.net](https://purifil.net).
 
 ---
 
