@@ -16,6 +16,7 @@
 
 import { initWhatsAppLinks } from './services/whatsapp.js';
 import { initHeader } from './ui/header.js';
+import { initMediaTabs } from './ui/media-tabs.js';
 import { initMobileMenu, initActiveNavLink, initSmoothScroll } from './ui/navigation.js';
 import { initProductFilters } from './ui/filters.js';
 import { initScrollAnimations } from './ui/animations.js';
@@ -34,6 +35,7 @@ const MODULES = [
   { name: 'Smooth Scroll',  init: initSmoothScroll },
   { name: 'Active Nav',     init: initActiveNavLink },
   { name: 'Product Filters', init: initProductFilters },
+  { name: 'Media Tabs',      init: initMediaTabs },
   { name: 'Scroll Animations', init: initScrollAnimations },
 ];
 
