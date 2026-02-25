@@ -372,44 +372,97 @@ a {
   justify-content: center;
 }
 
-.hero__image-wrapper {
+/* --- Hero Carousel --- */
+.hero__carousel {
   position: relative;
-}
-
-.hero__image {
   width: 100%;
   max-width: 480px;
   border-radius: var(--radius-xl);
+  overflow: hidden;
   box-shadow: var(--shadow-xl);
-  object-fit: cover;
+}
+
+.carousel__track {
+  position: relative;
+  width: 100%;
   aspect-ratio: 4/5;
 }
 
-.hero__float-card {
+.carousel__slide {
   position: absolute;
-  bottom: 24px;
-  left: -20px;
-  background: var(--color-white);
-  padding: 16px 24px;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  pointer-events: none;
+}
+
+.carousel__slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.carousel__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--color-gray-900);
+  font-size: 0.9rem;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--color-gray-900);
-  animation: floatCard 3s ease-in-out infinite;
+  justify-content: center;
+  transition: var(--transition);
+  opacity: 0;
+  z-index: 2;
 }
 
-.hero__float-card i {
-  font-size: 1.3rem;
-  color: var(--color-primary);
+.hero__carousel:hover .carousel__btn {
+  opacity: 1;
 }
 
-@keyframes floatCard {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+.carousel__btn:hover {
+  background: var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+.carousel__btn--prev { left: 12px; }
+.carousel__btn--next { right: 12px; }
+
+.carousel__dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.carousel__dot {
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: var(--transition);
+}
+
+.carousel__dot.active {
+  background: var(--color-white);
 }
 
 .hero__wave {
@@ -1210,13 +1263,8 @@ a {
     order: -1;
   }
 
-  .hero__image {
+  .hero__carousel {
     max-width: 360px;
-  }
-
-  .hero__float-card {
-    left: auto;
-    right: 10%;
   }
 
   .categories__grid {

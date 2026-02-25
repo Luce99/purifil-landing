@@ -16,6 +16,7 @@
 
 import { initWhatsAppLinks } from './services/whatsapp.js';
 import { initHeader } from './ui/header.js';
+import { initCarousel } from './ui/carousel.js';
 import { initMediaTabs } from './ui/media-tabs.js';
 import { initMobileMenu, initActiveNavLink, initSmoothScroll } from './ui/navigation.js';
 import { initProductFilters } from './ui/filters.js';
@@ -31,6 +32,7 @@ import { initScrollAnimations } from './ui/animations.js';
 const MODULES = [
   { name: 'WhatsApp Links', init: initWhatsAppLinks },
   { name: 'Header',         init: initHeader },
+  { name: 'Hero Carousel',  init: initCarousel },
   { name: 'Mobile Menu',    init: initMobileMenu },
   { name: 'Smooth Scroll',  init: initSmoothScroll },
   { name: 'Active Nav',     init: initActiveNavLink },

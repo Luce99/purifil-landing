@@ -96,12 +96,29 @@
       </div>
 
       <div class="hero__visual">
-        <div class="hero__image-wrapper">
-          <img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=600&q=80" alt="Agua pura y cristalina" class="hero__image" loading="eager">
-          <div class="hero__float-card">
-            <i class="fas fa-shield-halved"></i>
-            <span>Certificación de calidad</span>
+        <div class="hero__carousel" id="heroCarousel">
+          <div class="carousel__track">
+            <div class="carousel__slide active">
+              <img src="img/banners/uf-5-etapas.png" alt="4 razones para adquirir el sistema de UF 5 Etapas – Purifil Calidad Garantizada" loading="eager">
+            </div>
+            <div class="carousel__slide">
+              <img src="img/banners/bateria-3ply.png" alt="5 beneficios de la batería 3-ply de 10 piezas – Purifil Calidad Garantizada" loading="lazy">
+            </div>
+            <div class="carousel__slide">
+              <img src="img/banners/utensilio-vital.png" alt="El utensilio vital para el inicio de clases de tu hijo es agua purificada – Purifil" loading="lazy">
+            </div>
+            <div class="carousel__slide">
+              <img src="img/banners/microplasticos.png" alt="Elimina el 99.9% de microplásticos, bacterias y virus – Purifil Calidad Garantizada" loading="lazy">
+            </div>
           </div>
+          <div class="carousel__dots">
+            <button class="carousel__dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="carousel__dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="carousel__dot" data-slide="2" aria-label="Slide 3"></button>
+            <button class="carousel__dot" data-slide="3" aria-label="Slide 4"></button>
+          </div>
+          <button class="carousel__btn carousel__btn--prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel__btn carousel__btn--next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
         </div>
       </div>
     </div>
@@ -194,7 +211,7 @@
         <div class="product-card" data-category="agua">
           <div class="product-card__badge">Popular</div>
           <div class="product-card__image">
-            <img src="img/products/faucet-agua.jpg" alt="Purificador de Agua Táctil Vitro – agua pura directo del grifo" loading="lazy">
+            <img src="img/products/purificador-tactil.png" alt="Purificador de Agua Táctil Vitro – agua pura directo del grifo" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Purificador de Agua</span>
@@ -212,7 +229,7 @@
 
         <div class="product-card" data-category="agua">
           <div class="product-card__image">
-            <img src="img/products/acero-mini.jpg" alt="Purificador en Acero Quirúrgico Mini" loading="lazy">
+            <img src="img/products/acero-mini.png" alt="Purificador en Acero Quirúrgico Mini" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Purificador de Agua</span>
@@ -230,7 +247,7 @@
 
         <div class="product-card" data-category="agua">
           <div class="product-card__image">
-            <img src="img/products/agua-grifo.jpg" alt="Purificador Acero Quirúrgico Grande – agua limpia para tu bienestar" loading="lazy">
+            <img src="img/products/acero-grande.png" alt="Purificador Acero Quirúrgico Grande – agua limpia para tu bienestar" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Purificador de Agua</span>
@@ -249,7 +266,7 @@
         <div class="product-card" data-category="agua">
           <div class="product-card__badge">Nuevo</div>
           <div class="product-card__image">
-            <img src="img/products/ultrafiltracion-pvdf.jpg" alt="Sistema de Ultrafiltración en PVDF" loading="lazy">
+            <img src="img/products/ultrafiltracion-pvdf.png" alt="Sistema de Ultrafiltración en PVDF" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Purificador de Agua</span>
@@ -267,7 +284,7 @@
 
         <div class="product-card" data-category="agua">
           <div class="product-card__image">
-            <img src="img/products/filtro-carbon.jpg" alt="Filtro Carbón en Bloque 7" loading="lazy">
+            <img src="img/products/filtro-carbon.png" alt="Filtro Carbón en Bloque 7" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Repuesto</span>
@@ -315,10 +332,10 @@
               </button>
             </div>
             <div class="product-card__image media-content active" data-content="image">
-              <img src="img/products/sisa-sencillo.jpg" alt="Sisa Sencillo con Plata Coloidal – purificador de agua con plata coloidal" loading="lazy">
+              <img src="img/products/sisa-sencillo.png" alt="Sisa Sencillo con Plata Coloidal – purificador de agua con plata coloidal" loading="lazy">
             </div>
             <div class="product-card__video media-content" data-content="video">
-              <video src="videos/sisa-sencillo-demo.mp4" controls preload="metadata" poster="img/products/sisa-sencillo.jpg">
+              <video src="videos/sisa-sencillo-demo.mp4" controls preload="metadata" poster="img/products/sisa-sencillo.png">
                 Tu navegador no soporta el elemento de video.
               </video>
             </div>
@@ -383,7 +400,7 @@
         <div class="product-card" data-category="aire" id="aire">
           <div class="product-card__badge">Destacado</div>
           <div class="product-card__image">
-            <img src="img/products/aire-hogar.jpg" alt="Purificador de Aire para Hogar" loading="lazy">
+            <img src="img/products/aire-hogar.png" alt="Purificador de Aire para Hogar" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Purificador de Aire</span>
@@ -402,7 +419,7 @@
 
         <div class="product-card" data-category="aire">
           <div class="product-card__image">
-            <img src="img/products/aire-empresarial.jpg" alt="Purificador de Aire Empresarial" loading="lazy">
+            <img src="img/products/aire-empresarial.png" alt="Purificador de Aire Empresarial" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Purificador de Aire</span>
@@ -423,7 +440,7 @@
         <div class="product-card" data-category="cocina" id="cocina">
           <div class="product-card__badge">Popular</div>
           <div class="product-card__image">
-            <img src="img/products/bateria-cocina.jpg" alt="Batería de Cocina 12 Piezas" loading="lazy">
+            <img src="img/products/bateria-cocina.png" alt="Batería de Cocina 12 Piezas" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Utensilios de Cocina</span>
@@ -442,7 +459,7 @@
 
         <div class="product-card" data-category="cocina">
           <div class="product-card__image">
-            <img src="img/products/bateria-10.jpg" alt="Batería de Cocina 10 Piezas Triple Capa" loading="lazy">
+            <img src="img/products/bateria-10.png" alt="Batería de Cocina 10 Piezas Triple Capa" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Utensilios de Cocina</span>
@@ -460,7 +477,7 @@
 
         <div class="product-card" data-category="cocina">
           <div class="product-card__image">
-            <img src="img/products/plancha-lisa.jpg" alt="Plancha Lisa Purinox" loading="lazy">
+            <img src="img/products/plancha-lisa.png" alt="Plancha Lisa Purinox" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Utensilios de Cocina</span>
@@ -478,7 +495,7 @@
 
         <div class="product-card" data-category="cocina">
           <div class="product-card__image">
-            <img src="img/products/wok.jpg" alt="Sartén Wok DOMO" loading="lazy">
+            <img src="img/products/wok.png" alt="Sartén Wok DOMO" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Utensilios de Cocina</span>
@@ -496,7 +513,7 @@
 
         <div class="product-card" data-category="cocina">
           <div class="product-card__image">
-            <img src="img/products/set-coccion.jpg" alt="Set de Cocción Rápida" loading="lazy">
+            <img src="img/products/set-coccion.png" alt="Set de Cocción Rápida" loading="lazy">
           </div>
           <div class="product-card__body">
             <span class="product-card__category">Utensilios de Cocina</span>
