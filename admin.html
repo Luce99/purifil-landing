@@ -35,6 +35,10 @@
         <button type="submit" class="btn btn--primary btn--full" id="loginBtn">
           <i class="fas fa-sign-in-alt"></i> Iniciar sesión
         </button>
+        <div class="login__forgot">
+          <button type="button" id="forgotPasswordBtn">¿Olvidaste tu contraseña?</button>
+        </div>
+        <div class="form-success" id="forgotSuccess"></div>
       </form>
     </div>
   </section>
@@ -56,6 +60,9 @@
         </button>
         <button class="sidebar__link" data-section="contact">
           <i class="fas fa-address-book"></i> Contacto
+        </button>
+        <button class="sidebar__link" data-section="account">
+          <i class="fas fa-user-cog"></i> Mi cuenta
         </button>
       </nav>
       <button class="sidebar__logout" id="logoutBtn">
@@ -117,6 +124,30 @@
             <i class="fas fa-save"></i> Guardar cambios
           </button>
           <div class="form-success" id="contactSuccess"></div>
+        </form>
+      </div>
+
+      <!-- ACCOUNT SECTION -->
+      <div class="content-section" id="sec-account">
+        <form class="contact-form" id="changePasswordForm">
+          <h3 class="account-form__title">Cambiar contraseña</h3>
+          <div class="form-group">
+            <label for="currentPassword">Contraseña actual</label>
+            <input type="password" id="currentPassword" required autocomplete="current-password" placeholder="Tu contraseña actual">
+          </div>
+          <div class="form-group">
+            <label for="newPassword">Nueva contraseña</label>
+            <input type="password" id="newPassword" required autocomplete="new-password" placeholder="Mínimo 6 caracteres">
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirmar nueva contraseña</label>
+            <input type="password" id="confirmPassword" required autocomplete="new-password" placeholder="Repite la nueva contraseña">
+          </div>
+          <div class="form-error" id="changePasswordError"></div>
+          <button type="submit" class="btn btn--primary">
+            <i class="fas fa-key"></i> Actualizar contraseña
+          </button>
+          <div class="form-success" id="changePasswordSuccess"></div>
         </form>
       </div>
 

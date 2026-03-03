@@ -138,6 +138,7 @@ const sectionNames = {
   products: 'Productos',
   banners: 'Banners',
   contact: 'Contacto',
+  account: 'Mi cuenta',
 };
 
 sidebarLinks.forEach((link) => {
