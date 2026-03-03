@@ -64,6 +64,12 @@ function applyFilter(cards, filter) {
       card.classList.add(CSS_CLASSES.HIDDEN);
     }
   });
+
+  // Mostrar/ocultar subheaders (ej. Sistemas de filtración)
+  document.querySelectorAll('.products__subheader[data-category]').forEach((el) => {
+    const show = shouldShowCard(filter, el.dataset.category);
+    el.classList.toggle(CSS_CLASSES.HIDDEN, !show);
+  });
 }
 
 /**
