@@ -47,10 +47,12 @@ function handleTabClick(event) {
 }
 
 /**
- * Inicializa las pestañas de media en todas las tarjetas de producto.
+ * Inicializa las pestañas de media usando delegación de eventos
+ * para soportar tarjetas cargadas dinámicamente.
  */
 export function initMediaTabs() {
-  document.querySelectorAll(MEDIA_TAB_SELECTOR).forEach((tab) => {
-    tab.addEventListener('click', handleTabClick);
+  document.addEventListener('click', (e) => {
+    const tab = e.target.closest(MEDIA_TAB_SELECTOR);
+    if (tab) handleTabClick({ currentTarget: tab });
   });
 }

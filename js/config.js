@@ -7,13 +7,13 @@
  * Para cambiar el número de WhatsApp o los mensajes, modifica SOLO este archivo.
  */
 
-/** Datos de contacto de la asesora */
-export const CONTACT = Object.freeze({
+/** Datos de contacto de la asesora (mutable para que Firestore pueda sobreescribirlos) */
+export const CONTACT = {
   WHATSAPP_NUMBER: '573153855543',
   PHONE_MAIN: '+576016164645',
   EMAIL: 'telemercadeo@purifilinternacional.com',
   ADVISOR_NAME: 'Diana Grisales',
-});
+};
 
 /** Configuración de mensajes predefinidos para WhatsApp */
 export const WHATSAPP_MESSAGES = Object.freeze({
